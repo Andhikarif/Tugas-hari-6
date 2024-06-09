@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+
+    <style>
+        body {
+          background-color: rgb(120, 213, 227);
+          height: 80vh;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color:rgb(165, 42, 97)
+          }
+  
+      </style>
+      
+  </head>
+  <body>
+</script>
+<script type="text/javascript">
+    alert ('Selamat Hari Ini')
+    function disp_propmt() {
+        var name = prompt("Please Enter Your Name", " ");
+        if (name != null && name != " ") {
+          document.write("Hello " + name + " btw bentar lagi lebaran nich 🐄🐐🔪🗿");
+        }
+    }
+  </script>
+    <form action="#" method="post" onsubmit="return validasi()">
+        <label class="nama">Nama :</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukkan Nama Sampeyan"
+          size="30"
+        />
+        <br /><br />
+        <label class="email">Email :</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Masukkan Email Sampeyan"
+          size="30"
+        />
+        <br /><br />
+        <label class="alamat">Alamat :</label>
+        <input
+          type="text"
+          id="alamat"
+          name="alamat"
+          placeholder="Masukkan alamat Sampeyan"
+          size="30"
+          />
+          <br /><br />
+        <input type="submit" value="Kirim" />
+        <br />
+        <br />
+        <script>
+            function validasi() {
+              var nama = document.getElementById("nama").value;
+              var email = document.getElementById("email").value;
+              var alamat = document.getElementById("alamat").value;
+    
+              if (nama == "") {
+                alert("Nama Kudu Di Isi");
+                return false;
+              }
+    
+              if (email == "") {
+                alert("Email Kudu Di Isi");
+                return false;
+              }
+
+              if (alamat == "") {
+                alert("Alamat Kudu Di Isi");
+                return false;
+              }
+    
+              return true;
+            }
+          </script>
+        <input type="button" onclick="disp_propmt()" value="Coba Tekan">
+        <br><br>
+        <input type="button" onclick="alert('Dibilang Ga Ada')" value="Tidak Ada Apa-Apa">
+        <br><br>
+        <input type="button" onclick="confirm('Bener Nihh??')" value="Jangan Ditekan">
+        
+    </form>
+  </body>
+</html>
